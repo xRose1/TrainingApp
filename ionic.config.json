@@ -1,0 +1,8 @@
+{
+  "name": "trainingapp",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular"
+}

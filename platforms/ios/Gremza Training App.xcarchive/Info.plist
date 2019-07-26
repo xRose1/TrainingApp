@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ApplicationProperties</key>
+	<dict>
+		<key>ApplicationPath</key>
+		<string>Applications/Gremza Training App.app</string>
+		<key>CFBundleIdentifier</key>
+		<string>training.app.first</string>
+		<key>CFBundleShortVersionString</key>
+		<string>0.0.2</string>
+		<key>CFBundleVersion</key>
+		<string>0.0.2</string>
+		<key>SigningIdentity</key>
+		<string>iPhone Developer: marsel preci (5DARNR2265)</string>
+		<key>Team</key>
+		<string>NH46K275BX</string>
+	</dict>
+	<key>ArchiveVersion</key>
+	<integer>2</integer>
+	<key>CreationDate</key>
+	<date>2019-07-02T10:53:03Z</date>
+	<key>Name</key>
+	<string>Gremza Training App</string>
+	<key>SchemeName</key>
+	<string>Gremza Training App</string>
+</dict>
+</plist>

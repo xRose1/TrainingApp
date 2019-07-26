@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+   <ion-buttons slot="start">
+     <ion-back-button></ion-back-button>
+   </ion-buttons>
+   
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-img [src]="post?.images?.large"></ion-img>
+  <div class="singlecat" [innerHtml]="post?.images?.category"></div>
+  <div class="tittle" [innerHtml]="post?.title?.rendered"></div>
+  <div class="singlecontent" [innerHtml]="post?.content?.rendered"></div>
+
+  
+</ion-content>

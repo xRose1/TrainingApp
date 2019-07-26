@@ -1,0 +1,7 @@
+{
+  "appId": "training.app.first",
+  "appName": "trainingapp",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www"
+}

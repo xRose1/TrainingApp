@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="categoryMenu"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    
+    <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content
+          pullingIcon="arrow-dropdown"
+          pullingText="Pull to refresh"
+          refreshingSpinner="circles"
+          refreshingText="Refreshing...">
+        </ion-refresher-content>
+    </ion-refresher>
+
+    <ion-card *ngFor="let post of posts">
+        <a [routerLink]="['/','single', post.id]">
+        <ion-card-header>
+          <ion-img [src]="post.images.large"></ion-img>
+          <ion-card-title [innerHtml]="post.title.rendered"></ion-card-title>
+        </ion-card-header>
+       <ion-card-content [innerHtml]="post.excerpt.rendered">
+        </ion-card-content>
+        </a>
+      </ion-card>
+
+      <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
+          <ion-infinite-scroll-content
+            loadingSpinner="bubbles"
+            loadingText="Loading more data...">
+          </ion-infinite-scroll-content>
+        </ion-infinite-scroll>
+</ion-content>
